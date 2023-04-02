@@ -483,7 +483,8 @@ header .logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #111111;
+    background-image:url('/img/background.jpg');
+    background-size:100% auto;
     transition: 0.5s;
     z-index: 2;
 }
@@ -526,7 +527,6 @@ header .logo {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #1e1e1e00;
     mix-blend-mode: overlay;
 }
 
