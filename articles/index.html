@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>文章 | Loneleaf的博客</title>
+        <meta name="keywords" content="Loneleaf,博客,">
+        <meta name="description" content="A Blog by RavelloH"> <!-- CSS -->
+        <link type="text/css" rel="stylesheet" href="/css/common.css">
+        <link type="text/css" rel="stylesheet" href="/css/style.css">
+        <link type="text/css" rel="stylesheet" href="/css/iconfont.css">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="icon" href="/favicon.ico">
+        <style>
+        .listline {
+            width: 50%;
+        }
+        form.searchbox input[type=text] {
+            color: #c6c9ce;
+            height: 30px;
+            padding: 5px;
+            font-size: 12px;
+            float: left;
+            width: 80%;
+            background: #000000;
+            border: 1px solid #1e1e1e;
+            border-radius: 10px 0px 0px 10px;
+        }
+
+        form.searchbox button {
+            height: 30px;
+            float: left;
+            width: 20%;
+            padding: 5px;
+            background: #1e1e1e;
+            color: white;
+            font-size: 12px;
+            border: none;
+            cursor: pointer;
+            border: 1px solid #1e1e1e;
+            border-radius: 0px 10px 10px 0px;
+            text-align: center;
+            line-height: 10px;
+            margin: auto;
+        }
+
+        form.searchbox button:hover {
+            background: #0b7dda;
+            transition: background 0.2s;
+        }
+
+        form.searchbox::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .resultlist {
+            top: -20px;
+            height: 0;
+            width: 100%;
+            transition: height 0.4s;
+            background: #000000;
+            color: #c6c9ce;
+            overflow: hidden;
+        }
+        .resultlist#active {
+            border-radius: 10px;
+            border: 1px solid #1e1e1e;
+            height: 40vh;
+        }
+        .resultlist * {
+            margin: 2px;
+        }
+        .resulttitle {
+            color: #ffffff;
+            font-size: 1em;
+        }
+
+        #info {
+            opacity: 1;
+            transition: opacity 0.4s;
+        }
+        #hidden {
+            opacity: 0;
+        }
+
+        .fc {
+            text-align: center;
+        }
+        .title {
+            max-width: 45%;
+        }
+        .tr {
+            text-align: right
+        }
+        mark {
+            background-color: #0b7dda;
+            border-radius: 4px;
+            color: #fff;
+            margin: 0;
+        }
+        .showbox {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            margin: 2px !important
+        }
+        #jum {
+            line-height: 130%
+        }
+        #searchbutton span {
+            top: 2px;
+        }
+
+
+    </style>
+    </head>
+    <body>
+        <section class="showcase">
+            <div class="shade"></div>
+            <header>
+                <h2 class="logo"><a href="/" class="logos"> <img class="logoimg" src="/img/avatar.jpg" style="width: 1.5em;border-radius: 50%;" alt="avatar"> </a></h2>
+                <div class="headers">
+                    <nav>
+                        <a href="/"> 主页 </a> <a href="/works/"> 作品 </a> <a href="/articles/"> 文章 </a> <a href="/tag/"> 标签 </a> <a href="/about/"> 关于 </a>
+                        <p></p>
+                    </nav>
+                </div>
+                <div class="toggle">
+                </div>
+            </header>
+            <div class="overlay"></div>
+            <div class="text title" id="text">
+                <h3>文章</h3> <br>
+                <div class="searchbox">
+                    <form class="searchbox" onsubmit="return check();" autocomplete="off">
+                        <input type="text" placeholder=" 从所有文章内检索..." name="search" oninput="searchtext()" onpropertychange="searchtext()"> <button type="button" id="searchbutton"><span class="i_mini ri:search-2-line"></span></button>
+                        <div class="resultlist" id="resultlist">
+                            <i>- 搜索 -</i>
+                            <hr>
+                            <p align="center">输入关键词以在文章标题及正文中查询</p>
+                            <hr><a href="https://github.com/Loneleaf/RPageSearch">Search powered by RavelloH's RPageSearch</a>
+                        </div>
+                    </form>
+                </div>
+                <div id="info">
+                    <span id="jumping">此页面内容需要使用JavaScript</span>
+                    <script type="text/javascript">
+                    var jumping = document.getElementById("jumping");
+                    function show_runtime() {
+                        X = new Date("03/11/2023 00:00:00"); //设定时间(月\日\年 时:分:秒))
+                        Y = new Date(); //获取当前时间
+                        T = (Y.getTime() - X.getTime());
+                        M = 24 * 60 * 60 * 1000;
+                        a = T / M;
+                        A = Math.floor(a);
+                        b = (a - A) * 24;
+                        B = Math.floor(b);
+                        c = (b - B) * 60;
+                        C = Math.floor((b - B) * 60);
+                        D = Math.floor((c - C) * 60);
+                        jumping.innerHTML = "<br>记录并索引所有文章。<br><span id='jum' >Loading...</span><br>"
+                        textcache = "最近更新于" + A + "天前。"
+
+                    }
+                    show_runtime();
+                </script>
+                </div>
+            </div>
+            <div class="text listline" id="text">
+                <div class="listprogram" style="--i: 3">
+                    <h4><a href="/articles/20230311/">赠吾师</a></h4> <span class="i_mini ri:time-line"></span> <time>2023-03-11</time> • <span class="i_mini ri:price-tag-3-line"></span> <a class="tag" href="/tag/#诗歌">诗歌</a><br>
+                </div>
+                <hr>
+                <div class="listprogram" style="--i: 2">
+                    <h4><a href="/articles/20230123/">匆匆</a></h4> <span class="i_mini ri:time-line"></span> <time>2023-01-23</time> • <span class="i_mini ri:price-tag-3-line"></span> <a class="tag" href="/tag/#诗歌">诗歌</a><br>
+                </div>
+                <hr>
+                <div class="listprogram" style="--i: 1">
+                    <h4><a href="/articles/20230116/">风懠</a></h4> <span class="i_mini ri:time-line"></span> <time>2023-01-16</time> • <span class="i_mini ri:price-tag-3-line"></span> <a class="tag" href="/tag/#诗歌">诗歌</a><br>
+                </div>
+            </div>
+            <ul class="social">
+                <li><a href="/about/"><span class="i ri:file-info-line"></span></a></li>
+                <li><a href="http://github.com/Loneleaf" target="_blank" rel="noreferrer"><span class="i ri:github-fill"></span></a></li>
+                <li><a href="http://xeocnet-studio.github.io" target="_blank" rel="noreferrer"> <span class="i ri:building-2-line"> </span> </a></li>
+                <li><a href="https://ravelloh.github.io/RSS/rss.xml" target="_blank"><span class="i ri:rss-fill"></span></a></li>
+            </ul>
+        </section>
+        <div class="menu">
+            <ul>
+                <script type="text/javascript" src="/js/menu.js"></script>
+            </ul>
+        </div> <!-- JavaScript -->
+        <script src="/js/script.js"></script>
+        <script type="text/javascript" src="/js/common.js"></script>
+        <script>
+
+        setTimeout("onload()", "500");
+        setTimeout("virgule(document.getElementById('jum'), textcache, 80)", '1000')
+    </script>
+        <script src="/js/searchdata.js"></script>
+        <script src="/js/search.js"></script>
+    </body>
+</html>

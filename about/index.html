@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>关于 | Loneleaf的博客</title>
+        <meta name="keywords" content="Loneleaf,博客,">
+        <meta name="description" content="A Blog by RavelloH"> <!-- CSS -->
+        <link type="text/css" rel="stylesheet" href="/css/common.css">
+        <link type="text/css" rel="stylesheet" href="/css/style.css">
+        <link type="text/css" rel="stylesheet" href="/css/iconfont.css">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="icon" href="/favicon.ico">
+    </head>
+    <body>
+        <section class="showcase">
+            <div class="shade"></div>
+            <header>
+                <h2 class="logo"><a href="/" class="logos"> <img class="logoimg" src="/img/avatar.jpg" style="width: 1.5em;border-radius: 50%;" alt="avatar"> </a></h2>
+                <div class="headers">
+                    <nav>
+                        <a href="/"> 主页 </a> <a href="/works/"> 作品 </a> <a href="/articles/"> 文章 </a> <a href="/tag/"> 标签 </a> <a href="/about/"> 关于 </a>
+                        <p></p>
+                    </nav>
+                </div>
+                <div class="toggle">
+                </div>
+            </header>
+            <div class="overlay"></div>
+            <div class="text title" id="text">
+                <h3>关于</h3>
+                <p>关于此博客: <br> 此blog由Loneleaf维护，由<a href="https://ravelloh.gitee.ii"> RavelloH制作 </a> <br> 此博客使用了 Github Pages提供的静态资源服务器服务。<br> 原创内容使用 知识共享 署名-非商业性使用-相同方式共享 4.0 (CC BY-NC-ND 4.0) 协议授权。<br>Themes: <a href="https://github.com/ravelloh/RTheme">RTheme</a> by <a href="http://ravelloh.github.io">RavelloH</a>。<br><br> <span id="runtime_span">网站已运行:此功能需要打开JavaScript。</span> <script type="text/javascript">
+                        function show_runtime() {
+                            window.setTimeout("show_runtime()", 1000);
+                            X = new Date("2/04/2023 11:29:00");
+                            Y = new Date();
+                            T = (Y.getTime() - X.getTime());
+                            M = 24 * 60 * 60 * 1000;
+                            a = T / M;
+                            A = Math.floor(a);
+                            b = (a - A) * 24;
+                            B = Math.floor(b);
+                            c = (b - B) * 60;
+                            C = Math.floor((b - B) * 60);
+                            D = Math.floor((c - C) * 60);
+                            runtime_span.innerHTML = "网站已运行:" + A + "天" + B + "小时" + C + "分" + D + "秒。"
+                        }
+                        show_runtime();
+                    </script> <br></p>
+            </div> <span class=" i_large ri:file-info-line"></span>
+            <ul class="social">
+                <li><a href="/about/"><span class="i ri:file-info-line"></span></a></li>
+                <li><a href="http://github.com/Loneleaf" target="_blank" rel="noreferrer"><span class="i ri:github-fill"></span></a></li>
+            </ul>
+        </section>
+        <div class="menu">
+            <ul>
+                <script type="text/javascript" src="/js/menu.js"></script>
+            </ul>
+        </div> <!-- JavaScript -->
+        <script src="/js/script.js"></script>
+        <script type="text/javascript" src="/js/common.js"></script>
+    </body>
+</html>
