@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=0;" name="viewport">
+        <title>触不及| Loneleaf的博客</title>
+        <meta name="keywords" content="Loneleaf,博客"> <!-- CSS -->
+        <link type="text/css" rel="stylesheet" href="/css/common.css">
+        <link type="text/css" rel="stylesheet" href="/css/style.css">
+        <link type="text/css" rel="stylesheet" href="/css/iconfont.css">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="icon" href="/favicon.ico">
+    </head>
+    <body>
+        <section class="showcase">
+            <div class="shade"></div>
+            <div id="scroll-progress"></div>
+            <header>
+                <h2 class="logo"><a href="/" class="logos"> <img class="logoimg" src="/img/avatar.jpg" style="width: 1.5em;border-radius: 50%;" alt="avatar"> </a></h2>
+                <div class="headers">
+                    <nav><a href="/"> 主页 </a> <a href="/works/"> 作品 </a> <a href="/articles/"> 文章 </a> <a href="/tag/"> 标签 </a> <a href="/about/"> 关于 </a>
+                        <p></p>
+                    </nav>
+                </div>
+                <div class="toggle">
+                </div>
+            </header>
+            <div class="overlay"></div>
+            <div class="article" id="text">
+                <h2>触不及</h2> <span class="i_mini ri:time-line"></span> 2021-10-01 • <span class="i_mini ri:price-tag-3-line"></span> <a class="tag" href="/tag/#诗歌">诗歌</a>•<span class="i_mini ri:search-eye-line"></span> <span id="twikoo_visitors"></span>
+                <hr> <br> <br> <p>盖吾深陷红尘琐事，所写其一。</p ><br><poem>
+                     触不及
+                    <br>文/孤凡
+                    <br>卧室中一个人的下午，
+                    <br>发呆，到处看：
+                    <br>一线阳光冲过防盗窗，
+                    <br>不顾一切地闯进我的地盘。
+                    <br>啊哈，来客人了。
+                    <br>于是我的椅子，我的桌子，
+                    <br>我的所有一切物件儿，
+                    <br>竟然都被这夕晖占去了。
+                    <br>
+                    <br>无可奈何，窗外看。
+                    <br>能看到我的天，
+                    <br>我的云，
+                    <br>我的山，
+                    <br>我的树，
+                    <br>我的地球，
+                    <br>我的青岛市，
+                    <br>唯独看不见一只契科夫。
+                    <br>
+                    <br>是接近了，又是远离了。
+                    <br>可悲的灵魂在试探。
+                    <br>畏缩的手，畏缩的瞳。
+                    <br>所有的行为都是小心翼翼地。
+                    <br>但是这该死的阳光不一样，
+                    <br>大摇大摆可以闯入我的世界，
+                    <br>灼伤我的手，刺破我的眼，
+                    <br>占有我仅有的一切。
+                    <br>
+                    <br>直到我也被染上暮色茫茫，
+                    <br>什么时候下雨呢！洗涤我！
+                    <br>契科夫保持他的笑脸，
+                    <br>我却永远触之不及，
+                    <br>阳光先生请自便，
+                    <br>这是我唯一想要占有的了。
+                </poem>
+                <hr> <br> <span class="i_mini ri:information-line"></span> 原创内容使用 知识共享 署名-非商业性使用-相同方式共享 4.0 (CC BY-NC-ND 4.0) 协议授权。 <br><br>
+                <div id="tcomment"></div>
+                <script src="https://cdn.staticfile.org/twikoo/1.6.4/twikoo.all.min.js"></script>
+                <script>
+            twikoo.init({
+                envId: 'https://comment.ravelloh.ml/',
+                el: '#tcomment',
+            })
+        </script>
+            </div>
+            <ul class="social">
+                <li><a href="/about/"><span class="i ri:file-info-line"></span></a></li>
+                <li><a href="http://github.com/Loneleaf" target="_blank" rel="noreferrer"><span class="i ri:github-fill"></span></a></li>
+                <li><a href="http://xeocnet-studio.github.io" target="_blank" rel="noreferrer"> <span class="i ri:building-2-line"> </span> </a></li>
+                <li><a href="/RSS/rss.xml" target="_blank"><span class="i ri:rss-fill"></span></a></li>
+            </ul>
+        </section>
+        <div class="menu">
+            <ul>
+                <script type="text/javascript" src="/js/menu.js"></script>
+            </ul>
+        </div>
+        <script src="/js/script.js"></script>
+        <script type="text/javascript" src="/js/common.js"></script>
+    </body>
+</html>
